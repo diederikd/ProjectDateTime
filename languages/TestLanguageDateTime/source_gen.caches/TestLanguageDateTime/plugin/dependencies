@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="TestLanguageDateTime.plugin.DateTimeInterpreter_extension" file="DateTimeInterpreter_extension.java">
+    <classNode dependClassName="TestLanguageDateTime.plugin.InterpreterDateTimeInterpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.CachedInterpreterFinder" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
+    <classNode extendsClassName="jetbrains.mps.smodel.structure.Default" />
+  </dependency>
+  <dependency className="TestLanguageDateTime.plugin.EvalCache" file="EvalCache.java">
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.MapSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.Sequence" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="TestLanguageDateTime.plugin.EvalHelper" file="EvalHelper.java">
+    <classNode dependClassName="TestLanguageDateTime.plugin.EvalCache" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ContextImpl" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEnvironment" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.INodeValueCache" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.NodeValueCacheImpl" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="TestLanguageDateTime.plugin.ExtensionDescriptor" file="ExtensionDescriptor.java">
+    <classNode dependClassName="TestLanguageDateTime.plugin.DateTimeInterpreter_extension" />
+    <classNode dependClassName="java.lang.Iterable" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="jetbrains.mps.smodel.structure.Extension" />
+    <classNode extendsClassName="jetbrains.mps.smodel.structure.DefaultExtensionDescriptor" />
+  </dependency>
+  <dependency className="TestLanguageDateTime.plugin.Interpreter" file="Interpreter.java">
+    <classNode dependClassName="TestLanguageDateTime.plugin.EvalCache" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ContextImpl" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEnvironment" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IInterpreter" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.INodeValueCache" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRegistry" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.NodeValueCacheImpl" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="TestLanguageDateTime.plugin.InterpreterDateTimeInterpreter" file="InterpreterDateTimeInterpreter.java">
+    <classNode dependClassName="LanguageDateTime.behavior.Instant__BehaviorDescriptor" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ConceptEvaluatorBase" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IContext" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IEvaluator" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.IRelationship" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.ITypeMapper" />
+    <classNode dependClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.RuntimeException" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.time.LocalDate" />
+    <classNode dependClassName="java.time.LocalDateTime" />
+    <classNode dependClassName="java.time.LocalTime" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="com.mbeddr.mpsutil.interpreter.rt.InterpreterBase" />
+  </dependency>
+</dependenciesRoot>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="Context_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="TestLanguageDateTime.behavior.Context_BehaviorDescriptor" />
+    </file>
+    <file name="Rule_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="TestLanguageDateTime.behavior.Rule_BehaviorDescriptor" />
+    </file>
+    <file name="TestContext_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="TestLanguageDateTime.behavior.TestContext_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
