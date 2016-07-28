@@ -154,6 +154,20 @@ public class InterpreterDateTimeInterpreter extends InterpreterBase {
         return "isSameAs";
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(MetaAdapterFactory.getConcept(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca7b6e5L, "LanguageDateTime.structure.plusHours"), true) {
+      public Object evaluateEvaluator(SNode node, IContext context) {
+        try {
+          return true;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("plusHours()", node, ex);
+        }
+      }
+
+      @Override
+      public String toString() {
+        return "plusHours";
+      }
+    });
   }
 
 

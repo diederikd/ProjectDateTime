@@ -24,8 +24,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 
 public final class DateTimeInstant__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9058c50L, "LanguageDateTime.structure.DateTimeInstant");
@@ -49,16 +47,7 @@ public final class DateTimeInstant__BehaviorDescriptor extends BaseBHDescriptor 
       int minute = SPropertyOperations.getInteger(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9058c50L, 0x6b28562f9058c53L, "time")), MetaAdapterFactory.getProperty(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f905569fL, 0x6b28562f90556a2L, "minutes"));
       int second = SPropertyOperations.getInteger(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9058c50L, 0x6b28562f9058c53L, "time")), MetaAdapterFactory.getProperty(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f905569fL, 0x6b28562f90556a5L, "seconds"));
       LocalDateTime dt;
-      if (LOG.isInfoEnabled()) {
-        LOG.info("localdatetime dt");
-      }
       dt = LocalDateTime.of(year, month, day, hour, minute, second);
-      if (LOG.isInfoEnabled()) {
-        LOG.info("return datetime");
-      }
-      if (LOG.isInfoEnabled()) {
-        LOG.info(dt.toString());
-      }
       return dt;
     } catch (NumberFormatException e) {
       return null;
@@ -123,5 +112,4 @@ public final class DateTimeInstant__BehaviorDescriptor extends BaseBHDescriptor 
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  protected static Logger LOG = LogManager.getLogger(DateTimeInstant__BehaviorDescriptor.class);
 }

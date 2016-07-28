@@ -15,15 +15,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDate = new ConceptDescriptorBuilder("LanguageDateTime.structure.Date", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f905561bL)).super_("LanguageDateTime.structure.Instant").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL)).parents("LanguageDateTime.structure.Instant").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(482594770213230108L, "day"), new ConceptDescriptorBuilder.Prop(482594770213230110L, "month"), new ConceptDescriptorBuilder.Prop(482594770213230113L, "year")).properties("day", "month", "year").create();
   /*package*/ final ConceptDescriptor myConceptDateTimeInstant = new ConceptDescriptorBuilder("LanguageDateTime.structure.DateTimeInstant", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9058c50L)).super_("LanguageDateTime.structure.Instant").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL)).parents("LanguageDateTime.structure.Instant").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL)).childDescriptors(new ConceptDescriptorBuilder.Link(482594770213243985L, "date", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f905561bL), false, false, false), new ConceptDescriptorBuilder.Link(482594770213243987L, "time", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f905569fL), false, false, false)).children(new String[]{"date", "time"}, new boolean[]{false, false}).create();
   /*package*/ final ConceptDescriptor myConceptDateTimeInterval = new ConceptDescriptorBuilder("LanguageDateTime.structure.DateTimeInterval", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495b4L)).super_("LanguageDateTime.structure.Interval").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495aaL)).parents("LanguageDateTime.structure.Interval").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495aaL)).create();
-  /*package*/ final ConceptDescriptor myConceptDateTimeOperator = new ConceptDescriptorBuilder("LanguageDateTime.structure.DateTimeOperator", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(482594770213311822L, "instant1", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false), new ConceptDescriptorBuilder.Link(482594770213311825L, "instant2", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false)).children(new String[]{"instant1", "instant2"}, new boolean[]{false, false}).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptDateTimeModefier = new ConceptDescriptorBuilder("LanguageDateTime.structure.DateTimeModefier", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8da00L)).super_("LanguageDateTime.structure.Operator").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8e6b9L)).parents("LanguageDateTime.structure.Operator").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8e6b9L)).childDescriptors(new ConceptDescriptorBuilder.Link(1202122482814343681L, "instant", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false)).children(new String[]{"instant"}, new boolean[]{false}).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptDateTimeOperator = new ConceptDescriptorBuilder("LanguageDateTime.structure.DateTimeOperator", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).super_("LanguageDateTime.structure.Operator").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8e6b9L)).parents("LanguageDateTime.structure.Operator").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8e6b9L)).childDescriptors(new ConceptDescriptorBuilder.Link(482594770213311822L, "instant1", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false), new ConceptDescriptorBuilder.Link(482594770213311825L, "instant2", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false)).children(new String[]{"instant1", "instant2"}, new boolean[]{false, false}).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptDayOfWeek = new ConceptDescriptorBuilder("LanguageDateTime.structure.DayOfWeek", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).create();
-  /*package*/ final ConceptDescriptor myConceptDays = new ConceptDescriptorBuilder("LanguageDateTime.structure.Days", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90555f6L)).super_("LanguageDateTime.structure.Duration").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).parents("LanguageDateTime.structure.Duration").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(482594770213230071L, "number")).properties("number").create();
+  /*package*/ final ConceptDescriptor myConceptDays = new ConceptDescriptorBuilder("LanguageDateTime.structure.Days", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90555f6L)).super_("LanguageDateTime.structure.Duration").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).parents("LanguageDateTime.structure.Duration").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(8865844999314621713L, "text"), new ConceptDescriptorBuilder.Prop(482594770213230071L, "number")).properties("text", "number").create();
   /*package*/ final ConceptDescriptor myConceptDuration = new ConceptDescriptorBuilder("LanguageDateTime.structure.Duration", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).super_("LanguageDateTime.structure.TemporalEntity").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).parents("LanguageDateTime.structure.TemporalEntity").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptFriday = new ConceptDescriptorBuilder("LanguageDateTime.structure.Friday", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f905551fL)).super_("LanguageDateTime.structure.DayOfWeek").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).parents("LanguageDateTime.structure.DayOfWeek").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).create();
   /*package*/ final ConceptDescriptor myConceptInstant = new ConceptDescriptorBuilder("LanguageDateTime.structure.Instant", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL)).super_("LanguageDateTime.structure.TemporalEntity").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).parents("LanguageDateTime.structure.TemporalEntity").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptInterval = new ConceptDescriptorBuilder("LanguageDateTime.structure.Interval", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495aaL)).super_("LanguageDateTime.structure.TemporalEntity").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).parents("LanguageDateTime.structure.TemporalEntity").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).childDescriptors(new ConceptDescriptorBuilder.Link(482594770213180845L, "hasBegin", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false), new ConceptDescriptorBuilder.Link(482594770213180847L, "hasEnd", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495abL), false, false, false)).children(new String[]{"hasBegin", "hasEnd"}, new boolean[]{false, false}).abstract_().create();
   /*package*/ final ConceptDescriptor myConceptMonday = new ConceptDescriptorBuilder("LanguageDateTime.structure.Monday", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c8L)).super_("LanguageDateTime.structure.DayOfWeek").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).parents("LanguageDateTime.structure.DayOfWeek").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).create();
   /*package*/ final ConceptDescriptor myConceptMonths = new ConceptDescriptorBuilder("LanguageDateTime.structure.Months", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90555dbL)).super_("LanguageDateTime.structure.Duration").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).parents("LanguageDateTime.structure.Duration").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055583L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(482594770213230044L, "number")).properties("number").create();
+  /*package*/ final ConceptDescriptor myConceptOperator = new ConceptDescriptorBuilder("LanguageDateTime.structure.Operator", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8e6b9L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).create();
   /*package*/ final ConceptDescriptor myConceptSaturday = new ConceptDescriptorBuilder("LanguageDateTime.structure.Saturday", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f9055520L)).super_("LanguageDateTime.structure.DayOfWeek").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).parents("LanguageDateTime.structure.DayOfWeek").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).create();
   /*package*/ final ConceptDescriptor myConceptSunday = new ConceptDescriptorBuilder("LanguageDateTime.structure.Sunday", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c9L)).super_("LanguageDateTime.structure.DayOfWeek").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).parents("LanguageDateTime.structure.DayOfWeek").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495c7L)).create();
   /*package*/ final ConceptDescriptor myConceptTemporalEntity = new ConceptDescriptorBuilder("LanguageDateTime.structure.TemporalEntity", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f90495acL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().create();
@@ -42,16 +44,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptisAfter = new ConceptDescriptorBuilder("LanguageDateTime.structure.isAfter", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x6b28562f906954dL)).super_("LanguageDateTime.structure.DateTimeOperator").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).parents("LanguageDateTime.structure.DateTimeOperator").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).create();
   /*package*/ final ConceptDescriptor myConceptisBefore = new ConceptDescriptorBuilder("LanguageDateTime.structure.isBefore", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x5e765e444eab12ecL)).super_("LanguageDateTime.structure.DateTimeOperator").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).parents("LanguageDateTime.structure.DateTimeOperator").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).create();
   /*package*/ final ConceptDescriptor myConceptisSameAs = new ConceptDescriptorBuilder("LanguageDateTime.structure.isSameAs", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x5e765e444eab1d78L)).super_("LanguageDateTime.structure.DateTimeOperator").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).parents("LanguageDateTime.structure.DateTimeOperator").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x7b179a3374fa5a8eL)).create();
+  /*package*/ final ConceptDescriptor myConceptplusHours = new ConceptDescriptorBuilder("LanguageDateTime.structure.plusHours", MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca7b6e5L)).super_("LanguageDateTime.structure.DateTimeModefier").super_(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8da00L)).parents("LanguageDateTime.structure.DateTimeModefier").parentIds(MetaIdFactory.conceptId(0xef5812095a6e41d4L, 0x8160c9506c67dfa5L, 0x10aecc076ca8da00L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(1202122482814339906L, "hours")).properties("hours").create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDate, myConceptDateTimeInstant, myConceptDateTimeInterval, myConceptDateTimeOperator, myConceptDayOfWeek, myConceptDays, myConceptDuration, myConceptFriday, myConceptInstant, myConceptInterval, myConceptMonday, myConceptMonths, myConceptSaturday, myConceptSunday, myConceptTemporalEntity, myConceptTemporalUnit, myConceptThursday, myConceptTime, myConceptTuesday, myConceptUnitDay, myConceptUnitHour, myConceptUnitMinute, myConceptUnitMonth, myConceptUnitSeconds, myConceptUnitYear, myConceptWednesday, myConceptYears, myConceptisAfter, myConceptisBefore, myConceptisSameAs);
+    return Arrays.asList(myConceptDate, myConceptDateTimeInstant, myConceptDateTimeInterval, myConceptDateTimeModefier, myConceptDateTimeOperator, myConceptDayOfWeek, myConceptDays, myConceptDuration, myConceptFriday, myConceptInstant, myConceptInterval, myConceptMonday, myConceptMonths, myConceptOperator, myConceptSaturday, myConceptSunday, myConceptTemporalEntity, myConceptTemporalUnit, myConceptThursday, myConceptTime, myConceptTuesday, myConceptUnitDay, myConceptUnitHour, myConceptUnitMinute, myConceptUnitMonth, myConceptUnitSeconds, myConceptUnitYear, myConceptWednesday, myConceptYears, myConceptisAfter, myConceptisBefore, myConceptisSameAs, myConceptplusHours);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0ib, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0lb, conceptFqName)) {
       case 0:
         return myConceptDate;
       case 1:
@@ -59,62 +62,68 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 2:
         return myConceptDateTimeInterval;
       case 3:
-        return myConceptDateTimeOperator;
+        return myConceptDateTimeModefier;
       case 4:
-        return myConceptDayOfWeek;
+        return myConceptDateTimeOperator;
       case 5:
-        return myConceptDays;
+        return myConceptDayOfWeek;
       case 6:
-        return myConceptDuration;
+        return myConceptDays;
       case 7:
-        return myConceptFriday;
+        return myConceptDuration;
       case 8:
-        return myConceptInstant;
+        return myConceptFriday;
       case 9:
-        return myConceptInterval;
+        return myConceptInstant;
       case 10:
-        return myConceptMonday;
+        return myConceptInterval;
       case 11:
-        return myConceptMonths;
+        return myConceptMonday;
       case 12:
-        return myConceptSaturday;
+        return myConceptMonths;
       case 13:
-        return myConceptSunday;
+        return myConceptOperator;
       case 14:
-        return myConceptTemporalEntity;
+        return myConceptSaturday;
       case 15:
-        return myConceptTemporalUnit;
+        return myConceptSunday;
       case 16:
-        return myConceptThursday;
+        return myConceptTemporalEntity;
       case 17:
-        return myConceptTime;
+        return myConceptTemporalUnit;
       case 18:
-        return myConceptTuesday;
+        return myConceptThursday;
       case 19:
-        return myConceptUnitDay;
+        return myConceptTime;
       case 20:
-        return myConceptUnitHour;
+        return myConceptTuesday;
       case 21:
-        return myConceptUnitMinute;
+        return myConceptUnitDay;
       case 22:
-        return myConceptUnitMonth;
+        return myConceptUnitHour;
       case 23:
-        return myConceptUnitSeconds;
+        return myConceptUnitMinute;
       case 24:
-        return myConceptUnitYear;
+        return myConceptUnitMonth;
       case 25:
-        return myConceptWednesday;
+        return myConceptUnitSeconds;
       case 26:
-        return myConceptYears;
+        return myConceptUnitYear;
       case 27:
-        return myConceptisAfter;
+        return myConceptWednesday;
       case 28:
-        return myConceptisBefore;
+        return myConceptYears;
       case 29:
+        return myConceptisAfter;
+      case 30:
+        return myConceptisBefore;
+      case 31:
         return myConceptisSameAs;
+      case 32:
+        return myConceptplusHours;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0ib = new String[]{"LanguageDateTime.structure.Date", "LanguageDateTime.structure.DateTimeInstant", "LanguageDateTime.structure.DateTimeInterval", "LanguageDateTime.structure.DateTimeOperator", "LanguageDateTime.structure.DayOfWeek", "LanguageDateTime.structure.Days", "LanguageDateTime.structure.Duration", "LanguageDateTime.structure.Friday", "LanguageDateTime.structure.Instant", "LanguageDateTime.structure.Interval", "LanguageDateTime.structure.Monday", "LanguageDateTime.structure.Months", "LanguageDateTime.structure.Saturday", "LanguageDateTime.structure.Sunday", "LanguageDateTime.structure.TemporalEntity", "LanguageDateTime.structure.TemporalUnit", "LanguageDateTime.structure.Thursday", "LanguageDateTime.structure.Time", "LanguageDateTime.structure.Tuesday", "LanguageDateTime.structure.UnitDay", "LanguageDateTime.structure.UnitHour", "LanguageDateTime.structure.UnitMinute", "LanguageDateTime.structure.UnitMonth", "LanguageDateTime.structure.UnitSeconds", "LanguageDateTime.structure.UnitYear", "LanguageDateTime.structure.Wednesday", "LanguageDateTime.structure.Years", "LanguageDateTime.structure.isAfter", "LanguageDateTime.structure.isBefore", "LanguageDateTime.structure.isSameAs"};
+  private static String[] stringSwitchCases_1htk8d_a0a0lb = new String[]{"LanguageDateTime.structure.Date", "LanguageDateTime.structure.DateTimeInstant", "LanguageDateTime.structure.DateTimeInterval", "LanguageDateTime.structure.DateTimeModefier", "LanguageDateTime.structure.DateTimeOperator", "LanguageDateTime.structure.DayOfWeek", "LanguageDateTime.structure.Days", "LanguageDateTime.structure.Duration", "LanguageDateTime.structure.Friday", "LanguageDateTime.structure.Instant", "LanguageDateTime.structure.Interval", "LanguageDateTime.structure.Monday", "LanguageDateTime.structure.Months", "LanguageDateTime.structure.Operator", "LanguageDateTime.structure.Saturday", "LanguageDateTime.structure.Sunday", "LanguageDateTime.structure.TemporalEntity", "LanguageDateTime.structure.TemporalUnit", "LanguageDateTime.structure.Thursday", "LanguageDateTime.structure.Time", "LanguageDateTime.structure.Tuesday", "LanguageDateTime.structure.UnitDay", "LanguageDateTime.structure.UnitHour", "LanguageDateTime.structure.UnitMinute", "LanguageDateTime.structure.UnitMonth", "LanguageDateTime.structure.UnitSeconds", "LanguageDateTime.structure.UnitYear", "LanguageDateTime.structure.Wednesday", "LanguageDateTime.structure.Years", "LanguageDateTime.structure.isAfter", "LanguageDateTime.structure.isBefore", "LanguageDateTime.structure.isSameAs", "LanguageDateTime.structure.plusHours"};
 }

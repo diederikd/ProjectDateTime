@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:bf41b858-2700-4a82-b567-41cf949d6cb6(CopyTextPlugin.plugin)/8794515008210025852">
+    <file name="CopyTextPlugin_ApplicationPlugin.java">
+      <node id="8794515008210025852" at="9,0,10,0" concept="3" trace="myId" />
+      <node id="8794515008210025852" at="12,27,13,16" concept="7" />
+      <node id="8794515008210025852" at="15,30,16,30" concept="8" />
+      <node id="8794515008210025852" at="16,30,17,39" concept="2" />
+      <node id="8794515008210025852" at="17,39,18,14" concept="8" />
+      <node id="8794515008210025852" at="10,0,12,0" concept="1" trace="CopyTextPlugin_ApplicationPlugin#()V" />
+      <node id="8794515008210025852" at="12,0,15,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="8794515008210025852" at="15,0,20,0" concept="5" trace="createGroups#()V" />
+      <scope id="8794515008210025852" at="10,45,10,45" />
+      <scope id="8794515008210025852" at="12,27,13,16" />
+      <scope id="8794515008210025852" at="10,0,12,0" />
+      <scope id="8794515008210025852" at="12,0,15,0" />
+      <scope id="8794515008210025852" at="15,30,18,14" />
+      <scope id="8794515008210025852" at="15,0,20,0" />
+      <unit id="8794515008210025852" at="8,0,21,0" name="CopyTextPlugin.plugin.CopyTextPlugin_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:bf41b858-2700-4a82-b567-41cf949d6cb6(CopyTextPlugin.plugin)/8794515008210025853">
+    <file name="CopyAsText_Action.java">
+      <node id="8794515008210025853" at="14,0,15,0" concept="9" trace="ICON" />
+      <node id="8794515008210025853" at="15,30,16,34" concept="10" />
+      <node id="8794515008210025853" at="16,34,17,35" concept="2" />
+      <node id="8794515008210025853" at="17,35,18,41" concept="2" />
+      <node id="8794515008210025853" at="21,32,22,16" concept="7" />
+      <node id="8794515008210025853" at="26,53,27,19" concept="7" />
+      <node id="8794515008210025853" at="29,5,30,57" concept="6" />
+      <node id="8794515008210025853" at="31,25,32,21" concept="7" />
+      <node id="8794515008210025853" at="34,5,35,16" concept="7" />
+      <node id="8794515008210025853" at="25,95,28,5" concept="4" />
+      <node id="8794515008210025853" at="30,57,33,7" concept="4" />
+      <node id="8794515008210025853" at="37,0,40,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="8794515008210025853" at="20,0,24,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="8794515008210025853" at="15,0,20,0" concept="1" trace="CopyAsText_Action#()V" />
+      <node id="8794515008210025853" at="28,5,34,5" concept="0" />
+      <node id="8794515008210025853" at="24,0,37,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="8794515008210025853" at="38,96,38,96" />
+      <scope id="8794515008210025853" at="21,32,22,16" />
+      <scope id="8794515008210025853" at="26,53,27,19" />
+      <scope id="8794515008210025853" at="31,25,32,21" />
+      <scope id="8794515008210025853" at="15,30,18,41" />
+      <scope id="8794515008210025853" at="37,0,40,0">
+        <var name="_params" id="8794515008210025853" />
+        <var name="event" id="8794515008210025853" />
+      </scope>
+      <scope id="8794515008210025853" at="20,0,24,0" />
+      <scope id="8794515008210025853" at="29,5,33,7">
+        <var name="node" id="8794515008210025853" />
+      </scope>
+      <scope id="8794515008210025853" at="15,0,20,0" />
+      <scope id="8794515008210025853" at="25,95,35,16" />
+      <scope id="8794515008210025853" at="24,0,37,0">
+        <var name="_params" id="8794515008210025853" />
+        <var name="event" id="8794515008210025853" />
+      </scope>
+      <unit id="8794515008210025853" at="13,0,41,0" name="CopyTextPlugin.plugin.CopyAsText_Action" />
+    </file>
+  </root>
+</debug-info>
+

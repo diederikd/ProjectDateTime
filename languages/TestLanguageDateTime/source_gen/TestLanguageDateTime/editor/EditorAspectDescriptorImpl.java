@@ -15,6 +15,9 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   public Collection<ConceptEditor> getDeclaredEditors(SAbstractConcept concept) {
     {
       SAbstractConcept cncpt = ((SAbstractConcept) concept);
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x77c1272932b445a1L, 0xaaa405d08cec0b0eL, 0x6b28562f905fc07L, "TestLanguageDateTime.structure.Context"))) {
+        return Collections.<ConceptEditor>singletonList(new Context_Editor());
+      }
       if (SConceptOperations.isExactly(SNodeOperations.asSConcept(cncpt), MetaAdapterFactory.getConcept(0x77c1272932b445a1L, 0xaaa405d08cec0b0eL, 0x7b179a3374fa6144L, "TestLanguageDateTime.structure.Rule"))) {
         return Collections.<ConceptEditor>singletonList(new Rule_Editor());
       }

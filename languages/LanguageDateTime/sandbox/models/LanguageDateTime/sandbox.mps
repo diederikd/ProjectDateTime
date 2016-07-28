@@ -75,8 +75,8 @@
         <property role="3ZHXd3" value="2333" />
       </node>
     </node>
-    <node concept="3ZHX2k" id="qMxmbT1x07" role="3ZHR_E">
-      <property role="3ZHX2l" value="12" />
+    <node concept="3ZHX2k" id="7G9NKQTOFFg" role="3ZHR_E">
+      <property role="3ZHX2l" value="10" />
     </node>
     <node concept="3ZHX3A" id="qMxmbT1yga" role="3ZHR_E">
       <property role="3ZHX3B" value="2" />

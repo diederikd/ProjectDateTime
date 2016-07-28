@@ -9,9 +9,11 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
+import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import TestLanguageDateTime.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "77c12729-32b4-45a1-aaa4-05d08cec0b0e(TestLanguageDateTime)";
@@ -40,11 +42,17 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
+    if (aspectClass == BehaviorAspectDescriptor.class) {
+      return (T) new TestLanguageDateTime.behavior.BehaviorAspectDescriptor();
+    }
     if (aspectClass == EditorAspectDescriptor.class) {
       return (T) new EditorAspectDescriptorImpl();
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new TestLanguageDateTime.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return (T) new TestLanguageDateTime.textGen.TextGenAspectDescriptor();
     }
     return super.createAspect(aspectClass);
   }

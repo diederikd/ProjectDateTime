@@ -14,6 +14,7 @@ import java.util.Arrays;
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myInstant__BehaviorDescriptor = new Instant__BehaviorDescriptor();
   private final BHDescriptor myDateTimeInterval__BehaviorDescriptor = new DateTimeInterval__BehaviorDescriptor();
+  private final BHDescriptor myDays__BehaviorDescriptor = new Days__BehaviorDescriptor();
   private final BHDescriptor myDate__BehaviorDescriptor = new Date__BehaviorDescriptor();
   private final BHDescriptor myTime__BehaviorDescriptor = new Time__BehaviorDescriptor();
   private final BHDescriptor myDateTimeInstant__BehaviorDescriptor = new DateTimeInstant__BehaviorDescriptor();
@@ -21,12 +22,13 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final long[] myConceptBehaviorIds;
 
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[5];
+    myConceptBehaviorIds = new long[6];
     myConceptBehaviorIds[0] = 0x6b28562f90495abL;
     myConceptBehaviorIds[1] = 0x6b28562f90495b4L;
-    myConceptBehaviorIds[2] = 0x6b28562f905561bL;
-    myConceptBehaviorIds[3] = 0x6b28562f905569fL;
-    myConceptBehaviorIds[4] = 0x6b28562f9058c50L;
+    myConceptBehaviorIds[2] = 0x6b28562f90555f6L;
+    myConceptBehaviorIds[3] = 0x6b28562f905561bL;
+    myConceptBehaviorIds[4] = 0x6b28562f905569fL;
+    myConceptBehaviorIds[5] = 0x6b28562f9058c50L;
   }
 
   @Deprecated
@@ -45,10 +47,12 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
       case 1:
         return myDateTimeInterval__BehaviorDescriptor;
       case 2:
-        return myDate__BehaviorDescriptor;
+        return myDays__BehaviorDescriptor;
       case 3:
-        return myTime__BehaviorDescriptor;
+        return myDate__BehaviorDescriptor;
       case 4:
+        return myTime__BehaviorDescriptor;
+      case 5:
         return myDateTimeInstant__BehaviorDescriptor;
       default:
         return null;

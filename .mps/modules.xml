@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/LanguageDateTime/LanguageDateTime.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/LanguageDateTime/sandbox/LanguageDateTime.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/TestLanguageDateTime/TestLanguageDateTime.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/CopyTextPlugin/CopyTextPlugin.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

@@ -202,6 +202,10 @@
     <property role="3GE5qa" value="Duration" />
     <property role="TrG5h" value="Days" />
     <ref role="1TJDcQ" node="qMxmbT1lm3" resolve="Duration" />
+    <node concept="1TJgyi" id="7G9NKQTO$kh" role="1TKVEl">
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="qMxmbT1lnR" role="1TKVEl">
       <property role="TrG5h" value="number" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -270,7 +274,7 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="3GE5qa" value="Operator" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="12IN0tGEeqT" resolve="Operator" />
     <node concept="1TJgyj" id="qMxmbT1Dle" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="instant1" />
@@ -295,6 +299,36 @@
     <property role="3GE5qa" value="Operator" />
     <property role="TrG5h" value="isSameAs" />
     <ref role="1TJDcQ" node="7GnAzdOY_Ee" resolve="DateTimeOperator" />
+  </node>
+  <node concept="1TIwiD" id="12IN0tGDVr_">
+    <property role="1pbfSe" value="2102821612" />
+    <property role="3GE5qa" value="Operator" />
+    <property role="TrG5h" value="plusHours" />
+    <ref role="1TJDcQ" node="12IN0tGEdC0" resolve="DateTimeModefier" />
+    <node concept="1TJgyi" id="12IN0tGEcH2" role="1TKVEl">
+      <property role="TrG5h" value="hours" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12IN0tGEdC0">
+    <property role="1pbfSe" value="2102896135" />
+    <property role="3GE5qa" value="Operator" />
+    <property role="TrG5h" value="DateTimeModefier" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="12IN0tGEeqT" resolve="Operator" />
+    <node concept="1TJgyj" id="12IN0tGEdC1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="instant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="qMxmbT19mF" resolve="Instant" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="12IN0tGEeqT">
+    <property role="1pbfSe" value="2102899392" />
+    <property role="3GE5qa" value="Operator" />
+    <property role="TrG5h" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

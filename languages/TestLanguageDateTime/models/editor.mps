@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="t3ig" ref="r:e6fa3528-ede4-4a85-b045-c40bb0c3b1ae(TestLanguageDateTime.plugin)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="2w5c" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.updater(MPS.Editor/)" />
     <import index="1f83" ref="r:c35730ab-bab7-42ca-b501-281963e2602b(TestLanguageDateTime.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -19,6 +21,8 @@
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -28,6 +32,10 @@
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
+        <property id="1238091709220" name="labelName" index="1413C4" />
       </concept>
       <concept id="1139744628335" name="jetbrains.mps.lang.editor.structure.CellModel_Image" flags="sg" stub="8104358048506731195" index="1u4HXA">
         <property id="1139746504291" name="imageFile" index="1ubRXE" />
@@ -194,6 +202,61 @@
         </node>
       </node>
       <node concept="3F0ifn" id="62L7YcZW3XI" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7CcpcRWcMY4">
+    <ref role="1XX52x" to="1f83:qMxmbT1vK7" resolve="Context" />
+    <node concept="3EZMnI" id="6d4fgnE7Zpo" role="2wV5jI">
+      <node concept="l2Vlx" id="6d4fgnE7Zpp" role="2iSdaV" />
+      <node concept="3F0ifn" id="6d4fgnE7Zpq" role="3EZMnx">
+        <property role="3F0ifm" value="context" />
+      </node>
+      <node concept="3F0ifn" id="6d4fgnE7Zps" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="3mYdg7" id="6d4fgnE7Zpt" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="6d4fgnE7Zpu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6d4fgnE7Zpv" role="3EZMnx">
+        <node concept="l2Vlx" id="6d4fgnE7Zpw" role="2iSdaV" />
+        <node concept="lj46D" id="6d4fgnE7Zpx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="6d4fgnE7Zpy" role="3EZMnx">
+          <property role="3F0ifm" value="entities" />
+        </node>
+        <node concept="3F0ifn" id="6d4fgnE7Zpz" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+          <node concept="11L4FC" id="6d4fgnE7Zp$" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="6d4fgnE7Zp_" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F2HdR" id="6d4fgnE7ZpA" role="3EZMnx">
+          <ref role="1NtTu8" to="1f83:qMxmbT1vK8" />
+          <node concept="l2Vlx" id="6d4fgnE7ZpB" role="2czzBx" />
+          <node concept="pj6Ft" id="6d4fgnE7ZpC" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="6d4fgnE7ZpD" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="6d4fgnE7ZpE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6d4fgnE7ZpF" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="3mYdg7" id="6d4fgnE7ZpG" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

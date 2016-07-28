@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import LanguageDateTime.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "ef581209-5a6e-41d4-8160-c9506c67dfa5(LanguageDateTime)";
@@ -49,6 +50,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new LanguageDateTime.structure.StructureAspectDescriptor();
+    }
+    if (aspectClass == TextGenAspectDescriptor.class) {
+      return (T) new LanguageDateTime.textGen.TextGenAspectDescriptor();
     }
     return super.createAspect(aspectClass);
   }
